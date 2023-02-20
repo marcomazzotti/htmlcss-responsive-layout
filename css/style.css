@@ -24,6 +24,40 @@ a{
   text-decoration: none;
 }
 
+.card {
+  background-color: #b5ddff;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h2{
+  color: #509be7;
+}
+
+.icons{
+  color: #509be7;
+  font-size: 5rem;
+}
+
+.text{
+  text-align: center;
+}
+
+.pb-2{
+  padding-bottom: 2rem;
+}
+
+.pt-2{
+  padding-top: 2rem;
+}
+
+.mt-2{
+  margin-top: 2rem;
+}
+
 /* header */
 .header{
   background-color: #509be7;
@@ -51,7 +85,66 @@ a{
   border-radius: 20px;
 }
 
+/* main */
+.card h2{
+  text-align: center;
+}
+
+.app-store i{
+  padding-right: 1rem;
+}
+
+.app-store{
+  text-align: center;
+  color: white;
+  background-color: #509be7;
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.card-img{
+  width: 50%;
+}
+
 /* responsive */
+
+/* teblet */
+@media screen and (min-width: 768px) {
+  .col-large{
+    width: calc(100% / 3 * 2 - 1rem);
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .col-large p{
+    text-align: left;
+  }
+
+  .features{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .col-small{
+    width: calc(100% / 3 - 1rem);
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .col-margin{
+    margin-top: 2rem;
+  }
+
+  .icons{
+    padding-top: 1.5rem;
+  }
+
+}
+
+/* desktop */
 @media screen and (min-width: 992px) {
   .menu-list{
     display: inline-flex;
