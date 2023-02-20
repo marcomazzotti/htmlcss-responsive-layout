@@ -15,7 +15,7 @@ body{
 }
 
 .container{
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -62,6 +62,10 @@ a{
   margin-bottom: 4rem;
 }
 
+.mb-2{
+  margin-bottom: 2rem;
+}
+
 /* header */
 .header{
   background-color: #509be7;
@@ -91,6 +95,10 @@ a{
 
 /* main */
 /* features section */
+
+.features{
+  padding-bottom: 5rem;
+}
 .card h2{
   text-align: center;
 }
@@ -125,7 +133,7 @@ a{
 }
 
 .strategic-planning-img{
-  width: 50%;
+  width: 100%;
 }
 
 .specific-planning{
@@ -146,7 +154,7 @@ a{
 }
 
 .app-development-img{
-  width: 50%;
+  width: 100%;
 }
 
 .app-development p{
@@ -160,6 +168,50 @@ a{
   border-radius: 50%;
   line-height: 50px;
   text-align: center;
+}
+
+.testimonials {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.testimonials h2{
+  color: #9792e4;
+  font-size: 2rem;
+}
+
+.testimonials-card{
+  background-color: #9792e4;
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 50px;
+}
+
+.test-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: url(../img/testimonial1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.celia{
+  background-image: url(../img/testimonial2.jpg);
+}
+
+.bob{
+  background-image: url(../img/testimonial3.jpg);
+}
+
+.test-img img{
+  width: 100%;
+}
+
+.quote-author{
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 /* responsive */
@@ -198,17 +250,22 @@ a{
   }
 
   .strategic-planning-img{
-    width: 80%;
+    width: 100%;
+    padding: 3rem 0;
   }
 
   .specific-planning h2{
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: left;
   }
 
   .app-development-img{
-    width: 80%;
+    width: 100%;
   }
 
+  .testimonials-card{
+    display: flex;
+  }
 }
 
 /* desktop */
