@@ -17,6 +17,7 @@ body{
 .container{
   width: 80%;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 a{
@@ -170,6 +171,7 @@ a{
   text-align: center;
 }
 
+/* testimonial section */
 .testimonials {
   text-align: center;
   margin-top: 4rem;
@@ -212,6 +214,40 @@ a{
 .quote-author{
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+/* benefits section */
+.benefits{
+  background-color: #9792e4;
+}
+
+.benefits-title{
+  color: white;
+  font-size: 2rem;
+}
+
+.card-benefits{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.card-benefits span{
+  font-weight: 600;
+  color: #9792e4;
+  font-size: 3rem;
+}
+
+.card-benefits h2{
+  color: #9792e4;
+}
+
+.card-benefits a{
+  color: white;
+  background-color: #9792e4;
+  padding: 0.5rem 3rem;
+  border-radius: 60px;
+  font-weight: 800;
 }
 
 /* responsive */
@@ -266,6 +302,18 @@ a{
   .testimonials-card{
     display: flex;
   }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .benefits .col{
+    width: calc(100% / 2 - 1.5rem);
+    /* margin-right: 0.75rem;
+    margin-left: 0.75rem; */
+  }
 }
 
 /* desktop */
@@ -309,6 +357,18 @@ a{
 
   .specific-planning p{
     padding-bottom: 0;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .benefits .col{
+    width: calc(100% / 3 - 2rem);
+    /* margin-right: 0.75rem;
+    margin-left: 0.75rem; */
   }
 
 }
