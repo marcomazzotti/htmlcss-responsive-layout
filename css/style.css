@@ -67,6 +67,10 @@ a{
   margin-bottom: 2rem;
 }
 
+img{
+  width: 100%;
+}
+
 /* header */
 .header{
   background-color: #509be7;
@@ -250,6 +254,35 @@ a{
   font-weight: 800;
 }
 
+/* about us section */
+.col-70 h2{
+  color: #9792e4;
+  font-size: 3rem;
+}
+
+.col-30 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.col-30 p{
+  color: #9792e4;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.col-30 a{
+  background-color: #9792e4;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 0.75rem;
+}
+
+.col-30 i{
+  padding-right: 0.5rem;
+}
+
 /* responsive */
 
 /* teblet */
@@ -314,6 +347,23 @@ a{
     /* margin-right: 0.75rem;
     margin-left: 0.75rem; */
   }
+
+  .about-us .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-70{
+    width: 50%;
+  }
+
+  .col-30{
+    width: 30%;
+    margin-top: 2rem;
+  }
+
+  .col-30 img{
+  }
 }
 
 /* desktop */
@@ -369,6 +419,16 @@ a{
     width: calc(100% / 3 - 2rem);
     /* margin-right: 0.75rem;
     margin-left: 0.75rem; */
+  }
+
+  .col-70{
+    width: 70%;
+    margin-right: 3rem;
+  }
+
+  .col-30{
+    width: 30%;
+    margin-top: 2rem;
   }
 
 }
