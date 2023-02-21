@@ -102,10 +102,30 @@ img{
 /* features section */
 
 .features{
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
 }
-.card h2{
-  text-align: center;
+
+.card-large{
+  background-color: #b5ddff;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 20px;
+}
+
+.card-large h2{
+  color: #509be7;
+}
+
+.card-large img{
+  display: block;
+}
+
+#get-demo{
+  text-align: left;
+}
+
+.col-large p, h2{
+  text-align: left;
 }
 
 .app-store i{
@@ -119,10 +139,12 @@ img{
   padding: 0.5rem;
   border-radius: 20px;
   width: 200px;
+  display: block;
 }
 
 .card-img{
   width: 50%;
+  max-width: 280px;
 }
 
 /* planning section */
@@ -184,6 +206,7 @@ img{
 .testimonials h2{
   color: #9792e4;
   font-size: 2rem;
+  text-align: center;
 }
 
 .testimonials-card{
@@ -193,26 +216,11 @@ img{
   border-radius: 50px;
 }
 
-.test-img{
+.testimonial-img{
   width: 200px;
   height: 200px;
+  object-fit: cover;
   border-radius: 50%;
-  margin: 0 auto;
-  background-image: url(../img/testimonial1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.celia{
-  background-image: url(../img/testimonial2.jpg);
-}
-
-.bob{
-  background-image: url(../img/testimonial3.jpg);
-}
-
-.test-img img{
-  width: 100%;
 }
 
 .quote-author{
@@ -260,10 +268,15 @@ img{
   font-size: 3rem;
 }
 
+.col-70 p{
+  line-height: 40px;
+}
+
 .col-30 img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  position: relative;
 }
 
 .col-30 p{
@@ -279,7 +292,7 @@ img{
   padding: 0.5rem 0.75rem;
 }
 
-.col-30 i{
+.linkedin{
   padding-right: 0.5rem;
 }
 
@@ -287,11 +300,20 @@ img{
 
 /* teblet */
 @media screen and (min-width: 768px) {
+
+  .container{
+    width: 90%;
+  }
+
+  .features-row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .col-large{
-    width: calc(100% / 3 * 2 - 1rem);
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
+    width: calc(100% / 3 * 2 - 0.75rem);
+    margin-right: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   .col-large p{
@@ -301,17 +323,15 @@ img{
   .features{
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
   }
 
   .col-small{
-    width: calc(100% / 3 - 1rem);
+    width: calc(100% / 3 - 1.5rem);
     margin: 0;
-    padding-top: 0;
-  }
-
-  .col-margin{
-    margin-top: 2rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   .icons{
@@ -334,6 +354,21 @@ img{
 
   .testimonials-card{
     display: flex;
+    position: relative;
+  }
+
+  .testimonial-img{
+    margin-right: 2rem;
+  }
+
+  .testimonials-card p{
+    text-align: left;
+  }
+
+  .quote-author{
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
   }
 
   .row{
@@ -361,13 +396,27 @@ img{
     width: 30%;
     margin-top: 2rem;
   }
-
-  .col-30 img{
-  }
 }
 
 /* desktop */
 @media screen and (min-width: 992px) {
+
+  .container{
+    width: 90%;
+    max-width: 1100px;
+  }
+  .col-large{
+    display: flex;
+  }
+  
+  .card-img{
+    display: block;
+  }
+
+  .app-store{
+    display: block;
+  }
+
   .menu-list{
     display: inline-flex;
   }
@@ -393,7 +442,6 @@ img{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: 80%;
     gap: 50px;
   }
 
@@ -431,5 +479,10 @@ img{
     margin-top: 2rem;
   }
 
+  .quote-author{
+    position: absolute;
+    bottom: 70px;
+    left: 250px;
+  }
 }
 
